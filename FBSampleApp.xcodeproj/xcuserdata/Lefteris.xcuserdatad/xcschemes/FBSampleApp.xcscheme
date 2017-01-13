@@ -38,6 +38,16 @@
                ReferencedContainer = "container:FBSampleApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E6F7D2931E293FF5007A3447"
+               BuildableName = "FBSampleAppUITests.xctest"
+               BlueprintName = "FBSampleAppUITests"
+               ReferencedContainer = "container:FBSampleApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

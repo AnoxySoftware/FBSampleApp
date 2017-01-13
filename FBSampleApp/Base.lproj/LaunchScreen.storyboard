@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="PFStudioHeavy-Regular.otf">
+            <string>PFStudioHeavy-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -14,14 +24,50 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgimage" translatesAutoresizingMaskIntoConstraints="NO" id="rbS-bw-8dh">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowTitle" translatesAutoresizingMaskIntoConstraints="NO" id="ezZ-66-BDf">
+                                <rect key="frame" x="30" y="174" width="354" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ezZ-66-BDf" secondAttribute="height" multiplier="603:320" id="j0w-Sy-sLV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Swift App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B2Z-Ta-fsF">
+                                <rect key="frame" x="53" y="255.66666666666669" width="306" height="25.000000000000057"/>
+                                <fontDescription key="fontDescription" name="PFStudioHeavy-Regular" family="PF Studio" pointSize="25"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="PFStudioHeavy-Regular" family="PF Studio" pointSize="49"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ezZ-66-BDf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-100" id="2Wf-yM-MQr"/>
+                            <constraint firstItem="B2Z-Ta-fsF" firstAttribute="leading" secondItem="ezZ-66-BDf" secondAttribute="leading" constant="23" id="BTQ-sP-qa5"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="rbS-bw-8dh" secondAttribute="bottom" id="FQl-Vf-fm0"/>
+                            <constraint firstItem="rbS-bw-8dh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="IHJ-pq-Dxc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ezZ-66-BDf" secondAttribute="trailing" constant="10" id="O1W-sh-RAg"/>
+                            <constraint firstAttribute="trailing" secondItem="rbS-bw-8dh" secondAttribute="trailing" id="OjM-lg-S16"/>
+                            <constraint firstItem="rbS-bw-8dh" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="RAh-kG-hXF"/>
+                            <constraint firstItem="B2Z-Ta-fsF" firstAttribute="trailing" secondItem="ezZ-66-BDf" secondAttribute="trailing" constant="-25" id="cJQ-a2-QaA"/>
+                            <constraint firstItem="B2Z-Ta-fsF" firstAttribute="centerY" secondItem="ezZ-66-BDf" secondAttribute="centerY" id="jYe-P2-GKc"/>
+                            <constraint firstItem="ezZ-66-BDf" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="10" id="wgF-8a-cfn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-122.40000000000001" y="151.57421289355324"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bgimage" width="85" height="85"/>
+        <image name="yellowTitle" width="603" height="320"/>
+    </resources>
 </document>

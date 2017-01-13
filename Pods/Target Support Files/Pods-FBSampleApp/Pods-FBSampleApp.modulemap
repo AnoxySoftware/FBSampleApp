@@ -1,0 +1,6 @@
+framework module Pods_FBSampleApp {
+  umbrella header "Pods-FBSampleApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
